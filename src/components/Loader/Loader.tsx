@@ -1,7 +1,13 @@
+import { PropagateLoader } from 'react-spinners';
+
 import css from './Loader.module.css';
 
 const Loader = () => {
-  return <p className={css.text}>Loading movies, please wait...</p>;
+  return (
+    <div className={css.loaderBackdrop}>
+      <PropagateLoader color="#60147eff" />
+    </div>
+  );
 };
 
 export default Loader;
